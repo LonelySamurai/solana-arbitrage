@@ -132,7 +132,7 @@ func main() {
 	}
 	defer conn.Close()
 
-	// Prepare the subscription message for the specific Raydium pool account
+	//  subscription message for the specific Raydium pool account
 	subscribeMessage := map[string]interface{}{
 		"jsonrpc": "2.0",
 		"method":  "accountSubscribe",
@@ -140,12 +140,12 @@ func main() {
 		"id":      1,
 	}
 
-	// Send the subscription message to the WebSocket server
+	//  subscription message to the WebSocket server
 	if err := conn.WriteJSON(subscribeMessage); err != nil {
 		log.Fatalf("Failed to send subscription message: %v", err)
 	}
 
-	// Start listening for messages
+	// listening for messages
 	for {
 		var msg WebSocketMessage
 		err := conn.ReadJSON(&msg)
@@ -154,9 +154,9 @@ func main() {
 			break
 		}
 
-		// Handle the message (You will process this later to decode Raydium pool data)
+		
 		fmt.Printf("Received message: %+v\n", msg)
 
-		// You can add logic here to filter specific accounts and decode the pool data
+		
 	}
 }
