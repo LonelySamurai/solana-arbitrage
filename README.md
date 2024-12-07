@@ -1,4 +1,4 @@
-# Solana Arbitrage Bot (SARB)
+# Solana Arbitrage Detector
 
 A real-time arbitrage detection bot for Solana's Raydium DEX that monitors liquidity pools and identifies profitable trading opportunities using the Bellman-Ford algorithm.
 
