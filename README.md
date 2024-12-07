@@ -32,7 +32,7 @@ github.com/gagliardetto/solana-go
    go run main.go
    ```
 
-The program will connect to Solana's mainnet, monitor specified Raydium pools, and automatically detect and log any arbitrage opportunities as they arise.
+The program will connect to Solana's mainnet, monitor specified Raydium pools in the code (Change the address to your desrieed pool addresses), and automatically detect and log any arbitrage opportunities as they arise.
 
 ## Current Monitored Pools
 
